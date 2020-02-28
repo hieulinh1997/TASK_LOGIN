@@ -9,3 +9,4 @@ Fresher
   + Thực hiện lệnh: npm install  
   + Thực hiện tiếp: ng serve  
 -> Truy cập localhost:4200/login  
+=> Có thể xem UTC trong folder document
