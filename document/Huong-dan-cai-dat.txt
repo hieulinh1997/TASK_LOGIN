@@ -1,0 +1,31 @@
+*** Cài đặt môi trường và thực thi***
+
+
+I. CÀI ĐẶT MÔI TRƯỜNG THỰC THI:
+	1. Cài đặt Nodejs, npm và Angular
+		1.1 Cài đặt Nodejs, npm:
+			- https://nodejs.org/en/download/
+		1.2 Cài đặt Angular
+			- https://cli.angular.io/
+	2. Install Springboot cho eclipse (Có thể bỏ qua):
+		2.1 Cài đặt eclipse:
+			- https://www.eclipse.org/downloads/packages/
+		2.2 Cài đặt springboot: 
+			- Trong giao diện eclipse: Window -> Eclipse Marketplace -> tại search tìm với: sts -> install Spring Tools 4(aka Spring Tool Suite 4) 4.5.1.RELEASE
+II. CÁCH THỰC THI:
+	1. Tạo cơ sở dữ liệu mysql:
+		- Tạo cơ sở dữ liệu với file SpringBootAngularMySql.sql trong thư mục FS-0065/LOGIN-MYSQL/
+	2. Server:
+		* Cách 1:
+			- B1. Duy chuyển đến thư mục FS-0065/LOGIN-SPRINGBOOT/target/
+			- B2. Thực hiện lênh: java -jar registration-service-0.0.1-SNAPSHOT
+			- B3. Server sẽ bắt đầu ở cổng 8080
+		* Cách 2 (Xem lại cài đặt môi trường ở mục I/1.2):
+			- B1. Mở thư mục FS-0065/LOGIN-SPRINGBOOT/ bằng IDE cho JAVA.
+			- B2. Chạy thư mục LOGIN-SPRINGBOOT/ bằng cách: click chuột phải vào LOGIN-SPRINGBOOT -> Run as -> Spring Boot App. Với điều kiện đã install Springboot cho eclipse.
+			- B3. Server sẽ bắt đầu ở cổng 8080
+	3. Client
+		- Tại thư mục FS-0065/LOGIN-ANGULAR thực hiện lệnh: npm install
+		- Tiếp tục thực hiện lệnh: ng serve
+	4. Browser: 
+		- Truy cập: http://localhost:4200/login
